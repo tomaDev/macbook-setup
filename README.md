@@ -2,9 +2,7 @@
 
 # macbook-setup
 
-Upon getting a new Macbook, there's a laundry list of onboarding / setup / configuration steps to make it work for you.
-
-This document aims to ease the discovery process and get you going as painlessly as possible.
+Upon getting a new Macbook, there's a laundry list of onboarding / setup / configuration steps. This document aims to ease the discovery process and get you going as painlessly as possible
 
 # Who this page is for
 
@@ -12,7 +10,7 @@ This document aims to ease the discovery process and get you going as painlessly
 
 If you have little to no experience with any Unix-like system (macOS / Linux / HP OS / embedded systems / esoteric weirdness), only follow through the next section, OS Setup.
 
-*DO NOT PROCEED past OS Setup, Thar Be Dragons!*
+*DO NOT PROCEED past Browser Setup, Thar Be Dragons!*
 
 After getting some hands-on XP with the command line, feel free to proceed, but tread lightly!
 
@@ -43,6 +41,37 @@ Now then, *let's get this show on the road!*
     * Delay until repeat (suggestion - set to one before Short)
 
 ![keyboard_preferences.png](assets/keyboard_preferences.png)
+
+# Browser Setup
+## Useful Browser Extensions
+* [Vimium](https://github.com/philc/vimium) - Vim bindings and in-page search convenience for the browser. Available on Chrome Web Store and Firefox Addons Site.
+* [Disconnect.me](https://chrome.google.com/webstore/search/disconnect.me) - removes silent trackers and third-party cookies
+
+### Vimium Configs Walkthrough
+After installing Vimium, tweaking it ever so slightly can go a long way.
+Below is the config file for my personal preferences. It's pretty close to the default, just a bit crisper
+[vimium_options.json](assets/vimium_options.json)
+
+1. Download the file
+2. Navigate to the vimium options menu. Screenshot below is for Chrome, but Firefox is similar
+
+![chrome_plugins_visual_path.png](assets/chrome_plugins_visual_path.png)
+
+3. Click on the Show Advanced Options at bottom
+
+![Vimium_options_window.png](assets/Vimium_options_window.png)
+
+4. Scroll down to the Backupp and Restore section and click the Choose File button
+
+![vimium_backup_restore.png](assets/vimium_backup_restore.png)
+
+5. Load the file
+6. Verify configs (and amend according to your preferences)
+
+![vimium_advanced_options.png](assets/vimium_advanced_options.png)
+
+7. Save changes and close
+
 
 # Terminal Environment Setup
 
@@ -198,3 +227,21 @@ GitHub CLI - install and connect to your account:
 brew install gh
 gh auth login
 ```
+
+# Up for review
+Here we’ll enumerate and comment on items that look promising, but have yet to be reviewed
+
+* [Wave terminal](https://www.waveterm.dev/) - electron alternative to iTerm2
+
+# Ruled out
+Here we enumerate items that looked promising at first sight, were reviewed, and ruled out (at least for now)
+* [Warp terminal](https://warp.dev/) - Closed source, requires account sign in
+* [Starship](https://starship.rs/) - Looks super promising, but currently still lacks [transient prompt support](https://github.com/starship/starship/pull/4205). Will definitely take another look when this is solved.
+
+
+# Conclusion
+That's it, hopefully you're good to go. Any feedback is appreciated!
+Feel free to
+* Star the page if it helped you 😃
+* Open an issue
+* Submit a PR
