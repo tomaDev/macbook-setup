@@ -95,7 +95,7 @@ Finally make iTerm2 your default terminal in the OS
 [hatch](https://hatch.pypa.io/latest/) - The modern, extensible Python project manager with support for `uv` and `ruff`
 
 ```shell
-brew install hatch
+brew install hatch uv ruff
 ```
 
 [direnv](https://direnv.net/) - an environment variable manager
