@@ -111,16 +111,34 @@ chsh -s /opt/homebrew/bin/zsh  # provide password
 ## Config
 Below is my personal terminal configs file.
 
-It has some sane defaults, for example Option+arrow is defined to jump words (similar to the default behavior of macOS).
+Here are some of its custom configs:
+* Navigation - Option+arrow jumps words (similar to the default behavior of macOS)
+* Startup path
+  * Opening a new window/tab goes to ~/code - create 
+  * Opening a new split pane duplicates the current path
+* Layout
+    * Tabs are at the bottom (default is top)
+    * Clock is displayed in the bottom left corner
+    * Filter widget is next to the clock - Filter is super useful, as it works over a remote connection as well
+* Logging
+  * Logs are saved to ~/iterm2/logs
+  * Logs contain all inputs and outputs
 
+Feel free to customize to your heart's content after the basic setup
+
+1. Create the folder for the logs
+```shell
+mkdir -p ~/iterm2/logs
+mkdir -p ~/iterm2/configs
+mkdir -p ~/code
+```
+2. Download the file and put it in the iTerm2 configs folder
 [com.googlecode.iterm2.plist](assets/com.googlecode.iterm2.plist)
 
-To load it press CMD+, for the settings window and then General → Settings → Check the “Load settings from Custom” checkbox
-
+3. Load it from Settings → General → Settings → Check the “Load settings from Custom” checkbox
 ![iterm2_settings_general_settings.png](assets/iterm2_settings_general_settings.png)
 
-Finally make iTerm2 your default terminal in the OS
-
+4. Make iTerm2 your default terminal in the OS
 ![iterm2_macos_ribbon.png](assets/iterm2_macos_ribbon.png)
 
 # Useful Tools
