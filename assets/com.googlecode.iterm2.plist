@@ -809,7 +809,9 @@
 				</dict>
 			</dict>
 			<key>Log Directory</key>
-			<string>/Users/tomaDev/iterm2/logs</string>
+			<string>/var/log/iterm2</string>
+			<key>Log Filename Format</key>
+			<string>\(creationTimeString).\(profileName).\(termid).\(iterm2.pid).\(autoLogId).log</string>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
