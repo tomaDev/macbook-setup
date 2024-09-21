@@ -70,9 +70,6 @@ curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utili
 
 # Set iTerm2 to use zsh from Homebrew instead of Mac default zsh:
 brew install -f zsh
-echo /usr/local/bin/zsh | sudo tee -a /etc/shells  # provide password
-chsh -s /usr/local/bin/zsh  # provide password
-sed -ie ".bak" "/zstyle ':omz:update' mode reminder/s/^# //g" ~/.zshrc # Set Oh-My-Zsh version update reminders as needed
-exec zsh
-which zsh  # output should be "/usr/local/bin/zsh"
+echo /opt/homebrew/bin/zsh | sudo tee -a /etc/shells  # provide password
+chsh -s /opt/homebrew/bin/zsh  # provide password
 ```
