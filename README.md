@@ -1,3 +1,5 @@
+
+
 # macbook-setup
 
 Upon getting a new Macbook, there's a laundry list of onboarding / setup / configuration steps to make it work for you.
@@ -9,12 +11,14 @@ This document aims to ease the discovery process and get you going as painlessly
 ## New Unix users
 
 If you have little to no experience with any Unix-like system (macOS / Linux / HP OS / embedded systems / esoteric weirdness), only follow through the next section, OS Setup.
+
 *DO NOT PROCEED past OS Setup, Thar Be Dragons!*
+
 After getting some hands-on XP with the command line, feel free to proceed, but tread lightly!
 
 ## New Macbook users
 
-Working on a Macbook for the first time? *Congrats* and welcome to the journey :slight_smile:
+Working on a Macbook for the first time? *Congrats* and welcome to the journey 😃
 
 Following the initial learning curve and around 1-2 years of use, you'll begrudgingly concede macOS isn't quite as offensive to your sensibilities anymore.
 MacOS's saving grace is it's lineage of UNIX, making its shells close to Linux shells:
