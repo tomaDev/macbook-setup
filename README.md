@@ -60,8 +60,8 @@ brew update
 brew install iterm2 --cask
 open -a iTerm .  
 ```
-The last step triggers an OS Popup to allow to open the new iTerm2 terminal
-After the popup, you can close the old terminal and continue in iTerm2
+The last step triggers an OS Popup to allow to open the new iTerm2 terminal. After the popup, you can close the old terminal and continue in iTerm2
+
 Going forward, iTerm2 will be referred to as terminal
 
 ```
