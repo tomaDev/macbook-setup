@@ -95,22 +95,21 @@ open -a iTerm .
 The last step triggers an OS Permissions Popup. After allowing, close the old terminal and continue in iTerm
 
 ## Config
-Below is my personal terminal configs file.
-
-Here are some of its custom configs:
-* Navigation - Option+arrow jumps words (similar to the default behavior of macOS)
+In step (2) of the following setup you can download my personal config file. Below are some of its custom configs:
+* Navigation
+  * Option+arrow jumps words. In most guides online this is defined at the user profile level, which is puzzling, as I'd imagine most users would want this convenience. Here I've defined it at the global level
 * Startup path
   * Opening a new window/tab goes to `~/code`
   * Opening a new split pane duplicates the current path
 * Layout
     * Tabs are at the bottom (default is top)
     * Clock is displayed in the bottom left corner
-    * Filter widget is next to the clock - Filter is super useful, as it works over a remote connection as well
-* Logging
-  * Logs are saved to /var/log/iterm2
+    * Filter widget is next to the clock - super useful, as it works over ssh as well
+* Profile
+  * Scrollback is unlimited. The default is 1000 lines, which is almost never enough
+  * Logs are saved to `/var/log/iterm2` - must set permissions to the folder (the `chown` in step (1)). If your machine has multiple users, or if you prefer to avoid touching permissions, set the log dir to your user-owned directory
   * Logs contain all inputs and outputs
-
-Customize to your heart's content after the basic setup
+* `Magic` (iTerm's special features) - instant replay buffer size increased to 40MB
 
 1. Create paths and add permissions for the log folder
 ```shell
@@ -119,13 +118,15 @@ mkdir -p ~/code
 sudo mkdir -p /var/log/iterm2
 sudo chown -R $(whoami) /var/log/iterm2
 ```
-2. Download the config file into the iTerm2 configs folder
-[com.googlecode.iterm2.plist](assets/com.googlecode.iterm2.plist)
+2. Download the config file into the iTerm2 configs folder [com.googlecode.iterm2.plist](assets/com.googlecode.iterm2.plist)
 3. Load it from Settings → General → Settings → Check the “Load settings from Custom” checkbox
+
 ![iterm2_settings_general_settings.png](assets/iterm2_settings_general_settings.png)
 4. Make iTerm2 your default terminal in the OS
+
 ![iterm2_macos_ribbon.png](assets/iterm2_macos_ribbon.png)
 
+5. Read about shell integration and consider installing it
 # Useful Tools
 ## Managers
 [Homebrew](https://brew.sh/) - MacOS package manager
