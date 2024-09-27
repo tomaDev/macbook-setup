@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AlternateMouseScroll</key>
-	<true/>
+	<false/>
 	<key>Command</key>
 	<string></string>
 	<key>CopyLastNewline</key>

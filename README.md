@@ -98,6 +98,8 @@ The last step triggers an OS Permissions Popup. After allowing, close the old te
 In step (2) of the following setup you can download my personal config file. Below are some of its custom configs:
 * Navigation
   * Option+arrow jumps words. In most guides online this is defined at the user profile level, which is puzzling, as I'd imagine most users would want this convenience. Here I've defined it at the global level
+* Alternate screen mode (Any TUI - vim, screen, tmux etc)
+  * Mouse wheel scrolls through console output instead of history (iTerm2 > Settings > Advanced > search "scroll wheel sends arrow keys" > No)
 * Startup path
   * Opening a new window/tab goes to `~/code`
   * Opening a new split pane duplicates the current path
@@ -221,7 +223,7 @@ grep 'plugins=(.*)' ~/.zshrc | grep -Fv '# Example'
 brew install vim  # override system app with brew package to get the full version
 brew install httpie  # for parity with http requests on linux using the http util
 brew install jq yq tree  # parsers
-brew install azure-cli awscli  # cloud CLI clients
+brew install tmux  # terminal multiplexer
 brew install esolitos/ipa/sshpass  # commonly used in Iguazio for server remote access
 # Main usage: 
 # Double-click on a Provazio remote server IP - his will copy sshpass command to Clipboard. Paste to Terminal and run 
