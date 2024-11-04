@@ -224,14 +224,12 @@ brew install vim  # override system app with brew package to get the full versio
 brew install httpie  # for parity with http requests on linux using the http util
 brew install jq yq tree  # parsers
 brew install tmux  # terminal multiplexer
-brew install esolitos/ipa/sshpass  # commonly used in Iguazio for server remote access
-# Main usage: 
-# Double-click on a Provazio remote server IP - his will copy sshpass command to Clipboard. Paste to Terminal and run 
-# Recommended general usage:
+brew install esolitos/ipa/sshpass  # commonly used for server remote access
+# General usage:
 # Save a password to a file FILENAME and run:
-# sshpass -f FILENAME ssh user@remote 
+# sshpass -f FILENAME ssh OPTIONS user@remote 
 # Example: 
-# sshpass -f ~/.password ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=180 -o ServerAliveCountMax=3 iguazio@3.20.72.13 
+# sshpass -f ~/.password ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=180 -o ServerAliveCountMax=3 admin@3.4.5.6 
 # Very useful usage examples here - https://www.cyberciti.biz/faq/how-to-install-sshpass-on-macos-os-x/
 
 ```
