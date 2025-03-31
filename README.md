@@ -124,6 +124,7 @@ sudo chown -R $(whoami) /var/log/iterm2
 3. Load it from Settings → General → Settings → Check the “Load settings from Custom” checkbox
 
 ![iterm2_settings_general_settings.png](assets/iterm2_settings_general_settings.png)
+
 4. Make iTerm2 your default terminal in the OS
 
 ![iterm2_macos_ribbon.png](assets/iterm2_macos_ribbon.png)
