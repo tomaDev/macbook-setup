@@ -61,7 +61,7 @@ Below is the config file for my personal preferences. It's pretty close to the d
 
 ![Vimium_options_window.png](assets/Vimium_options_window.png)
 
-4. Scroll down to the Backupp and Restore section and click the Choose File button
+4. Scroll down to the Backup and Restore section and click the Choose File button
 
 ![vimium_backup_restore.png](assets/vimium_backup_restore.png)
 
