@@ -2,7 +2,7 @@
 
 # macbook-setup
 
-Upon getting a new Macbook, there's a laundry list of onboarding / setup / configuration steps. This document aims to ease the discovery process and get you going as painlessly as possible
+Upon getting a new MacBook, there's a laundry list of onboarding / setup / configuration steps. This document aims to ease the discovery process and get you going as painlessly as possible
 
 # Who this page is for
 
@@ -14,12 +14,12 @@ If you have little to no experience with any Unix-like system (macOS / Linux / H
 
 After getting some hands-on XP with the command line, feel free to proceed, but tread lightly!
 
-## New Macbook users
+## New MacBook users
 
-Working on a Macbook for the first time? *Congrats* and welcome to the journey 😃
+Working on a MacBook for the first time? *Congrats* and welcome to the journey 😃
 
 Following the initial learning curve and around 1-2 years of use, you'll begrudgingly concede macOS isn't quite as offensive to your sensibilities anymore.
-MacOS's saving grace is it's lineage of UNIX, making its shells close to Linux shells:
+macOS's saving grace is it's lineage of UNIX, making its shells close to Linux shells:
 
 * (Almost) anything can be accessed via the terminal
 * A vast package management system extends functionality easily
@@ -175,7 +175,7 @@ sed -i '.bak2' 's/^ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/
 
 xxx WARNING xxx
 
-After installation fully quit iterm2 and start it again.
+After installation fully quit iTerm2 and start it again.
 
 Just closing the window isn't enough. Quit it from the OS
 
@@ -222,9 +222,9 @@ grep 'plugins=(.*)' ~/.zshrc | grep -Fv '# Example'
 ## Utilities
 ```shell
 brew install vim  # override system app with brew package to get the full version
-brew install httpie  # for parity with http requests on linux using the http util
-brew install jq yq tree  # parsers
 brew install tmux  # terminal multiplexer
+brew install jq yq # parsers
+brew install tree  # dir structure viz for easy orientation
 brew install esolitos/ipa/sshpass  # commonly used for server remote access
 # General usage:
 # Save a password to a file FILENAME and run:
@@ -243,15 +243,16 @@ brew install gh
 gh auth login
 ```
 
-# Up for review
+# In review
 Here we’ll enumerate and comment on items that look promising, but have yet to be reviewed
 
+* [Opencode](https://opencode.ai/) - Claude code OSS alternative - accepts keys for all the big players, so no vendor lock-in.
 * [Wave terminal](https://www.waveterm.dev/) - electron alternative to iTerm2
 
 # Ruled out
 Here we enumerate items that looked promising at first sight, were reviewed, and ruled out (at least for now)
 * [Warp terminal](https://warp.dev/) - Closed source, requires account sign in
-* [Starship](https://starship.rs/) - Looks super promising, but currently still lacks [transient prompt support](https://github.com/starship/starship/pull/4205). Will definitely take another look when this is solved.
+* [Starship](https://starship.rs/) - Looks super nice, but lacks native [transient prompt support](https://github.com/starship/starship/pull/4205). 
 
 
 # Conclusion
