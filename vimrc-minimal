@@ -1,0 +1,21 @@
+" Paste these to your ~/.vimrc (or create one) to leverage Vim builtin niceties
+
+syntax on                                    " syntax highlighting
+filetype plugin indent on                    " indentation conventions by filetype
+
+set number                                   " show line numbers
+set relativenumber                           " make line numbers relative to your cursor position
+
+set expandtab                                " insert spaces instead of a literal <Tab>
+set tabstop=2                                " how many spaces a <Tab> *visually* equals
+set shiftwidth=2                             " indentation level for >>, <<, =, autoindent
+
+if has('termguicolors')
+  set termguicolors                          " Rich color scheme
+endif
+
+augroup NoHashIndent
+  autocmd!
+  autocmd FileType * setlocal indentkeys-=0# " disable autoindentation on comment
+augroup END
+

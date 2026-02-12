@@ -120,8 +120,8 @@ mkdir -p ~/code
 sudo mkdir -p /var/log/iterm2
 sudo chown -R $(whoami) /var/log/iterm2
 ```
-2. Download the config file into the iTerm2 configs folder [com.googlecode.iterm2.plist](assets/com.googlecode.iterm2.plist)
-3. Load it from Settings → General → Settings → Check the “Load settings from Custom” checkbox
+2. Download the [itermexport](assets/state.itermexport) file 
+3. Navigate to Settings → General → Settings and click the import button
 
 ![iterm2_settings_general_settings.png](assets/iterm2_settings_general_settings.png)
 
@@ -131,17 +131,18 @@ sudo chown -R $(whoami) /var/log/iterm2
 
 5. Read about shell integration and consider installing it
 # Useful Tools
-## Managers
-[Homebrew](https://brew.sh/) - MacOS package manager
-```shell
-# Install shell integration, including utilities and Xcode updates (takes awhile, depends mostly on internet speed)
-curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
 
-# Set zsh from Homebrew to be the default, instead of Mac OEM zsh:
+## Zshell
+
+Set zsh from Homebrew to be the default, instead of Mac OEM zsh:
+
+```shell
 brew install -f zsh
 echo /opt/homebrew/bin/zsh | sudo tee -a /etc/shells  # provide password
 chsh -s /opt/homebrew/bin/zsh  # provide password
 ```
+
+## Managers
 [hatch](https://hatch.pypa.io/latest/) - The modern, extensible Python project manager with support for `uv` and `ruff`
 
 ```shell
@@ -164,7 +165,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 
 powerlevel10k - theme for OMZ
-
 
 ```shell
 # there's a brew install option for this, but it doesn't work too well. Better just clone from source
@@ -225,6 +225,8 @@ brew install vim  # override system app with brew package to get the full versio
 brew install tmux  # terminal multiplexer
 brew install jq yq # parsers
 brew install tree  # dir structure viz for easy orientation
+brew install fzf # general purpose command-line fuzzy finder
+
 brew install esolitos/ipa/sshpass  # commonly used for server remote access
 # General usage:
 # Save a password to a file FILENAME and run:
